@@ -1,0 +1,27 @@
+EXPERIMENT_NAME: "3D_only" # This will be the name of directory in exp
+USE_THREADING: false
+GPUS: [0, 1] # If using threading, GPUs available
+REG_FIRST_ONLY: false # If set to true, will use the reg-trained model from the first experiment for all future experiments. Requires reg=True for exp 1
+
+# For full list of opts, see src/train/opts.py
+
+COMMON_ARGS: # Arguments Consistent between experiments
+  left_only: false # Only use left feet in dataset
+  tpose_only: false # Use T-Pose and articulated feet in dataset
+  full_caching: true # Cache 3D models, high memory overhead but significantly improves training speed
+
+  copy_over_masking: True # Copy masking of mesh slice over to predicted renders
+
+EXPERIMENTS: # Each experiment is its own block, complete with custom arguments
+
+  FIND:
+    reg: true # Run registration step between Model and Foot3D scans
+
+    chamf_loss: true
+    smooth_loss: true
+    texture_loss: false
+
+    latent_epochs: 1000
+
+    use_pose_code: True
+    use_latent_labels: True # Fix shape & texture latent codes between similar feet
