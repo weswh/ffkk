@@ -1,0 +1,20 @@
+运行前：
+1、安装分割算法 ：cd segments 
+                python -m pip install -e detectron2
+2、安装光栅化方法：cd submodules/diff-gaussian-rasterization
+                  python setup.py install && pip install . 
+3、修改路径：main_version.py,  main_version2.py
+            31~36行
+4、修改路径：test.sh
+   暂时仍注释 python3 ./CL-MVSNet-master/main.py 这一段，等待后续修改
+  source /home/veily/anaconda3/etc/profile.d/conda.sh
+  conda init
+  conda activate gaussian_surfels2
+  conda deactivate
+   修改source 后的路径为自己的conda路径，先注释掉，若目前环境不成功再进行修改
+   root="./0827/$id/"改为自己的数据路径
+
+运行：sh main.sh
+
+bash test.sh 202408270022
+后面的序号为202408270022数据文件夹名

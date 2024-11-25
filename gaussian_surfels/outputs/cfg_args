@@ -1,0 +1,1 @@
+Namespace(data_device='cuda', eval=False, images='image', model_path='./gaussian_surfels/outputs/', mono_normal=True, normalize_depth=True, pcl_path='', perpix_depth=True, random_background=True, resolution=1, sh_degree=3, source_path='/media/liuyalan/Projects/足扫项目/FOOT/data/202408230017', surface=True, use_mask=1, white_background=False)

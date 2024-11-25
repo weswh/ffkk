@@ -1,0 +1,95 @@
+paths:
+  yaml_path: "./segments/projects/PointRend/configs/SemanticSegmentation/pointrend_semantic_R_101_FPN_1x_cityscapes.yaml"
+  feet_model_path: "./segments/model/model_final.pth"
+  root_path: "./data"
+  pred_right_mesh_path: "/media/liuyalan/Projects/足扫项目/FOOT/FIND/eval_export/eval_3d/3D_only/FIND/meshes/00_pred_mesh.ply"
+  pred_left_mesh_path: "/media/liuyalan/Projects/足扫项目/FOOT/FIND/eval_export/eval_3d/3D_only/FIND/meshes/02_pred_mesh.ply"
+  left_mesh_path: "/media/liuyalan/Projects/足扫项目/FOOT/FIND/data/Meshes_sliced-20240926T014445Z-001/Meshes_sliced/0021/A/0021-A.obj"
+  right_mesh_path: "/media/liuyalan/Projects/足扫项目/FOOT/FIND/data/Meshes_sliced-20240926T014445Z-001/Meshes_sliced/0027/A/0027-A.obj"
+parameters:
+  batch_sizes: 5
+  min_contour_area: 10000
+  min_valid_masks: 5
+
+coordinates:
+  Ankle_circumference_coords:
+  - 496
+  - 3100
+  - 671
+  Arch_coords:
+  - 43
+  - 12309
+  Boat_bend_coords:
+  - 671
+  - 12309
+  External_thumb_coords:
+  - 451
+  - 12309
+  Five_toe_convex_coords:
+  - 757
+  - 12309
+  Five_toe_coords:
+  - 8471
+  - 12309
+  Heel_height_coords: 12309
+  Heel_width_coords:
+  - 3100
+  - 496
+  Hell_length_coords:
+  - 8
+  - 12309
+  Inside_ankle_coords: 496
+  Medial_ankle_coords:
+  - 496
+  - 12309
+  Midline_coords:
+  - 42683
+  - 12309
+  Oblique_width_coords:
+  - 1717
+  - 1776
+  Outer_ankle: 3100
+  Outer_ankle_coords:
+  - 3100
+  - 12309
+  Pocket_heel_circumference_coords:
+  - 8
+  - 671
+  - 3100
+  Tarsal_circumference_coords:
+  - 1776
+  - 727
+  - 1717
+  Tarsal_coords:
+  - 4993
+  - 12309
+  Tarsal_height_coords: 4993
+  Toe_circumference_coords:
+  - 451
+  - 727
+  - 757
+  first_metatarsal_coords: 1776
+  first_metatarsal_toe:
+  - 1776
+  - 12309
+  five_metatarsal_coords: 1717
+  five_metatarsal_toe:
+  - 1717
+  - 12309
+  five_toe_coords: 757
+  foot_bottom_length_coords:
+  - 2504
+  - 42683
+  - 8
+  thumb_height_coords:
+  - 1106
+  - 1434
+  thumb_inside_coords: 451
+  toe_width_coords:
+  - 757
+  - 451
+  vertices_coords:
+  - 1475
+  - 3322
+  - 28456
+  Waist_dimples_coords: 43

@@ -1,0 +1,6 @@
+# ninja log v5
+0	4951	1726219833113026988	/media/liuyalan/Projects/足扫项目/FOOT/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/forward.o	72215c1be6acacc4
+0	5212	1726219833375027196	/media/liuyalan/Projects/足扫项目/FOOT/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/backward.o	84bae195ebe2cc1f
+1	8277	1726219836436029692	/media/liuyalan/Projects/足扫项目/FOOT/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/ext.o	a654d37847afc745
+1	15567	1726219843724036268	/media/liuyalan/Projects/足扫项目/FOOT/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/cuda_rasterizer/rasterizer_impl.o	28b19fcc4fd00549
+1	89408	1726219917556150385	/media/liuyalan/Projects/足扫项目/FOOT/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-37/rasterize_points.o	8d8b9fe6daeaa310

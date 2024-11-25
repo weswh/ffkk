@@ -1,0 +1,4 @@
+# ninja log v5
+0	6292	1721617263566330005	/home/chuck/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/ext.o	8eb6da10809d0418
+7	3300	1721617609066326444	/home/chuck/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/forward.o	b490e43000eca421
+7	3558	1721617609326326388	/home/chuck/gaussian_surfels/submodules/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-38/cuda_rasterizer/backward.o	8e1d8581bc998eca

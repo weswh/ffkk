@@ -1,0 +1,36 @@
+appName = "ai-gateway-client"
+
+[pulsar]
+url = "pulsar://121.43.52.191:8650"
+
+[pulsar.consumer]
+topic = "foot3d"
+subscriptionName = "ai"
+
+[pulsar.producer]
+topic = "ai-task"
+
+[task]
+# 任务名称
+name = "foot-scan-task"
+# 分析任务的并行数
+concurrency = 1
+# 数据存放本地路径
+localDataDir = "/media/liuyalan/Projects/足扫项目/FOOT/data/"
+# 输入数据对象存放路径批次格式
+inputDataPathBatchPattern = "^[0-9]{12}"
+# 输出数据文件，路径相对localDataDir/{taskId}/
+outputFile = ["data.json", "feet.obj", "images"]
+# 执行任务的shell脚本
+shScript = "/media/liuyalan/Projects/足扫项目/FOOT/main.sh"
+# 任务最大执行时间：单位s
+maxExecutionTime = 1200
+
+[oss]
+endpoint = "https://oss-cn-beijing.aliyuncs.com"
+# 访问key
+accessKeyId = "b7971430d8d4cf518b870e44ca8b8facdbfabda1ad9641930f6a471b4452ec8a"
+# 访问密钥
+accessKeySecret = "0603406d5cd24662b050f3f51be7d35c555be4cc2e5a90c08d8fa5a863fc8fc9"
+# bucket
+bucketName = "chuck-foot-scan"
